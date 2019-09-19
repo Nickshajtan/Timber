@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.6.0" type="template" client="site">
+    <name>Timber</name>
+    <creationDate>2018-02-28</creationDate>
+    <author>Nikita Nosov HCC</author>
+    <authorEmail>shajtanuch@gmail.com</authorEmail>
+    <copyright>© 2018 HCC. All Rights Reserved.</copyright>
+    <license>GNU/GPL</license>
+    <version>1.0.0</version>
+    <description>TPL_TIMBER_XML_DESCRIPTION</description>
+
+    <files>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+	    <folder>libs</folder>
+	    <folder>template_part</folder>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>index.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+
+    <positions>
+        <position>header-1</position>
+		<position>header-2</position>
+		<position>banner</position>
+		<position>fullwidth-1</position>
+		<position>left-column-1</position>
+		<position>left-column-2</position>
+		<position>left-column-3</position>
+		<position>right-column-1</position>
+		<position>right-column-2</position>
+		<position>right-column-3</position>
+		<position>fullwidth-2</position>
+		<position>footer-column-1</position>
+		<position>footer-column-2</position>
+	    <position>footer-column-3</position>
+		<position>footer-column-4</position>
+        <position>prefooter</position>
+        <position>footer</position>
+    </positions>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_timber.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_timber.sys.ini</language> 
+        <language tag="en-GB">ru-RU/ru-RU.tpl_timber.ini</language>
+        <language tag="en-GB">ru-RU/ru-RU.tpl_timber.sys.ini</language> 
+        <language tag="en-GB">uk-UA/uk-UA.tpl_timber.ini</language>
+        <language tag="en-GB">uk-UA/uk-UA.tpl_timber.sys.ini</language>  
+    </languages>
+<config>
+		
+<fields name="params">
+			
+	<fieldset name="advanced">
+				
+		<field name="templateColor" class="" type="color" default="#333"
+ label="TPL_TIMBER_COLOR_LABEL"
+ description="TPL_TIMBER_COLOR_DESC" />
+       
+        <field name="menuColor" class="" type="color" default="#000"
+ label="TPL_TIMBER_MENU_COLOR_LABEL"
+ description="TPL_TIMBER_MENU_COLOR_DESC" />
+        <field name="menuTextColor" class="" type="color" default="#fff"
+ label="TPL_TIMBER_MENU_TEXT_COLOR_LABEL"
+ description="TPL_TIMBER_MENU_TEXT_COLOR_DESC" />
+		<field name="templateBackgroundColor" class="" type="color" default="#fff" label="TPL_TIMBER_BACKGROUND_COLOR_LABEL" description="TPL_TIMBER_BACKGROUND_COLOR_DESC" />
+
+
+		<field name="logoFile" class="" type="media" default=""
+	label="TPL_TIMBER_LOGO_LABEL"
+ description="TPL_TIMBER_LOGO_DESC" />
+		<field name="sitetitle"  type="text" default=""
+	label="JGLOBAL_TITLE"
+ description="JFIELD_ALT_PAGE_TITLE_LABEL"
+	filter="string" />
+		<field name="sitedescription"  type="text" default=""
+ label="JGLOBAL_DESCRIPTION"
+ description="JGLOBAL_SUBHEADING_DESC"
+	filter="string" />
+<field name="googleFont"
+ type="radio"
+ class="btn-group btn-group-yesno"
+	default="1"
+ label="TPL_TIMBER_FONT_LABEL"
+ description="TPL_TIMBER_FONT_DESC"
+>
+					<option value="1">JYES</option>
+					
+			<option value="0">JNO</option>
+				
+</field>	
+
+<field name="googleFontName" class="" type="text" default="Open+Sans"
+ label="TPL_TIMBER_FONT_NAME_LABEL"
+ description="TPL_TIMBER_FONT_NAME_DESC" />
+            
+				<field name="fluidContainer"
+ type="radio"
+ class="btn-group btn-group-yesno"
+ default="0"
+ label="TPL_TIMBER_FLUID_LABEL"
+					description="TPL_TIMBER_FLUID_DESC"
+>
+					
+			<option value="1">TPL_TIMBER_FLUID</option>
+					
+			<option value="0">TPL_TIMBER_STATIC</option>
+				
+</field>
+	</fieldset>
+		
+</fields>
+	
+</config>
+</extension>
